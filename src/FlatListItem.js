@@ -26,17 +26,17 @@ export default class FlatListItem extends React.PureComponent {
     this.viewProperties.height = evt.nativeEvent.layout.height;
   }
 
-  setVisibility(visibility) {
-    if (this.state.visibility != visibility) {
-      if (visibility == true) this.setState({ visibility: true })
-      else this.setState({ visibility: false })
-    }
-  }
+  //setVisibility(visibility) {
+  //  if (this.state.visibility != visibility) {
+  //    if (visibility == true) this.setState({ visibility: true })
+  //    else this.setState({ visibility: false })
+  //   }
+  //}
 
   render() {
-    if (this.state.visibility === false) {
-      return ( <View style={{ width: this.viewProperties.width, height: this.viewProperties.height }} /> )
-    }
+    //if (this.state.visibility === false) {
+    //  return ( <View style={{ width: this.viewProperties.width, height: this.viewProperties.height }} /> )
+    //}
 
     return (
       <View onLayout={this.onLayout.bind(this)}>
