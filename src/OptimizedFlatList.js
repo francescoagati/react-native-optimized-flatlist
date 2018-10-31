@@ -99,7 +99,7 @@ scrollToIndex(params: {
         ref={ref => this._listRef = ref}
         {...this.props}
         renderItem={ data => this._renderItem(data) }
-        onViewableItemsChanged={this._onViewableItemsChanged}
+        //onViewableItemsChanged={this._onViewableItemsChanged}
       />
     )
   }
